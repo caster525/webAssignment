@@ -8,6 +8,33 @@
     <link rel="stylesheet" href="MainStyle.css">
     <link rel="stylesheet" href="GalleryStyle.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script>
+        // create references to the modal...
+        var modal = document.getElementById('myModal');
+        // to all images -- note I'm using a class!
+        var images = document.getElementsByClassName('myImages');
+        // the image in the modal
+        var modalImg = document.getElementById("img01");
+        // and the caption in the modal
+        var captionText = document.getElementById("caption");
+
+        // Go through all of the images with our custom class
+        for (var i = 0; i < images.length; i++) {
+            var img = images[i];
+            // and attach our click listener for this image.
+            img.onclick = function(evt) {
+                modal.style.display = "block";
+                modalImg.src = this.src;
+                captionText.innerHTML = this.alt;
+            }
+        }
+
+        var span = document.getElementsByClassName("close")[0];
+
+        span.onclick = function() {
+            modal.style.display = "none";   
+        }
+    </script>
 </head>
 
 <body>
@@ -54,11 +81,6 @@
     </div>
 
     <div class="main-content">
-        <div class="container">
-            <h1>
-                Modern Minecraft
-            </h1>
-        </div>
         <h1 align="center">
             Gallery
         </h1>
@@ -66,25 +88,30 @@
             Here is a gallery of some modern designs in Minecraft for your inspiration and enjoyment.
         </h3>
         <div class="grid-wrapper">
-            <div><img src="images/modern4.webp"></div>
-            <div><img src="images/modern4Pool.webp"></div>
-            <div><img src="images/modern4Court.webp"></div>
-            <div><img src="images/modern4Rear.webp"></div>
-            <div><img src="images/modern4Front.webp"></div>
-            <div><img src="images/modern4FrontLow.webp"></div>
-            <div><img src="images/modern4FrontSide.webp"></div>
-            <div><img src="images/modern4FirstFloorInterior.webp"></div>
-            <div><img src="images/modern4LivingRoom.webp"></div>
-            <div><img src="images/modern4Lights.webp"></div>
-            <div><img src="images/modern4Stairs.webp"></div>
-            <div><img src="images/modern4Kitchen.webp"></div>
-            <div><img src="images/modern4Dining.webp"></div>
-            <div><img src="images/modern4Bedroom1.webp"></div>
-            <div><img src="images/modern4Bedroom1Bathroom.webp"></div>
-            <div><img src="images/modern4Bedroom2.webp"></div>
-            <div><img src="images/modern4Entertainment.webp"></div>
-            <div><img src="images/modern4Bar.webp"></div>
-            <div><img src="images/modern4Oriental.webp"></div>
+            <div class="big"><img class="myImages" id="myImg" alt="Overview" alt="Overview" src="images/modern4.webp"></div>
+            <div class="wide"><img class="myImages" id="myImg" alt="Swimming Pool" src="images/modern4Pool.webp"></div>
+            <div class="wide"><img class="myImages" id="myImg" alt="Tennis Court" src="images/modern4Court.webp"></div>
+            <div><img class="myImages" id="myImg" alt="Rear view" src="images/modern4Rear.webp"></div>
+            <div><img class="myImages" id="myImg" alt="Front view" src="images/modern4Front.webp"></div>
+            <div><img class="myImages" id="myImg" alt="Front view low angle" src="images/modern4FrontLow.webp"></div>
+            <div class="big"><img class="myImages" id="myImg" alt="Front view side angle" src="images/modern4FrontSide.webp"></div>
+            <div><img class="myImages" id="myImg" alt="Interior" src="images/modern4FirstFloorInterior.webp"></div>
+            <div class="tall"><img class="myImages" id="myImg" alt="Living Room" src="images/modern4LivingRoom.webp"></div>
+            <div><img class="myImages" id="myImg" alt="Living Room lights" src="images/modern4Lights.webp"></div>
+            <div><img class="myImages" id="myImg" alt="Staircase" src="images/modern4Stairs.webp"></div>
+            <div class="wide"><img class="myImages" id="myImg" alt="Kitchen" src="images/modern4Kitchen.webp"></div>
+            <div class="wide"><img class="myImages" id="myImg" alt="Dining Room" src="images/modern4Dining.webp"></div>
+            <div class="big"><img class="myImages" id="myImg" alt="Master Bedroom" src="images/modern4Bedroom1.webp"></div>
+            <div class="big"><img class="myImages" id="myImg" alt="En Suite Bathroom" src="images/modern4Bedroom1Bathroom.webp"></div>
+            <div><img class="myImages" id="myImg" alt="Guest Bedroom" src="images/modern4Bedroom2.webp"></div>
+            <div><img class="myImages" id="myImg" alt="Entertainment Room" src="images/modern4Entertainment.webp"></div>
+            <div><img class="myImages" id="myImg" alt="Bar Table" src="images/modern4Bar.webp"></div>
+            <div><img class="myImages" id="myImg" alt="Oriental Room" src="images/modern4Oriental.webp"></div>
+            <div id="myModal" class="modal">
+                <span class="close">&times;</span>
+                <img class="modal-content" id="img01">
+                <div id="caption"></div>
+              </div>
         </div>
     </div>
     <script>
