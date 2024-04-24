@@ -32,3 +32,15 @@ img {
     grid-column: span 2;
     grid-row: span 2;
 }
+.main-content{
+    position: unset;
+    background-color: #eee;
+    min-height: 100vh;
+    top:0;
+    transform: all 0.5s ease;
+    padding: 1rem;
+    margin-left: 80px;
+}
+.sidebar.active ~ .main-content{
+    margin-left: 250px;
+}
