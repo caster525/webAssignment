@@ -34,18 +34,6 @@
             </li>
             <li>
                 <a href="#">
-                    <i class='bx bxs-conversation'></i>
-                    <span class="nav-item">Member</span>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <i class='bx bxs-star-half'></i>
-                    <span class="nav-item">Events</span>
-                </a>
-            </li>
-            <li>
-                <a href="#">
                     <i class='bx bxs-photo-album'></i>
                     <span class="nav-item">Gallery</span>
                 </a>
@@ -54,12 +42,6 @@
                 <a href="#">
                     <i class='bx bxs-book-alt'></i>
                     <span class="nav-item">Guides</span>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <i class="bx bx-cog"></i>
-                    <span class="nav-item">Settings</span>
                 </a>
             </li>
             <li>
@@ -85,6 +67,13 @@
             <div><img src="images/modern4Bedroom1Bathroom.webp"></div>
         </div>
     </div>
-
+    <script>
+        let btn = document.querySelector('#btn');
+        let sidebar = document.querySelector('.sidebar');
+    
+        btn.onclick = function () {
+            sidebar.classList.toggle('active');
+        };
+    </script>
     
 </body>
