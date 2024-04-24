@@ -83,7 +83,6 @@
     height: 50px;
     width: 90%;
     margin: 0.8rem auto;
-    /* line-height: 50px; */
 }
 
 .sidebar ul li a {
@@ -118,16 +117,15 @@
 
 
 .main-content{
-    position: relative;
+    position:relative;
     background-color: #eee;
     min-height: 100vh;
     top:0;
     left:80px;
     transform: all 0.5s ease;
-    width: calc(100%-80px);
+    width: calc(100% - 80px);
     padding: 1rem;
 }
-
 .logo img {
     width: 40px;
     height: 40px;
