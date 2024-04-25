@@ -1,6 +1,6 @@
 .main-content {
     padding: 0rem;
-    background: #2696E9;
+    background: #000;
 
 }
 
@@ -12,7 +12,6 @@ header {
     z-index: 100;
     position: fixed;
     width: 100%;
-    /* display: flex; */
 }
 
 .brand {
@@ -22,23 +21,26 @@ header {
     text-transform: uppercase;
     text-decoration: none;
     padding: 15px 100px;
-    background-color: #2696E9;
-    /* background-color:black; */
     background: transparent;
-    border: 2px solid rgba(255, 255, 255, .2);
-    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(10px);
 }
 
 .home {
-    color: #fff;
+    
+
+    color: floralwhite;
     position: relative;
     width: 100%;
     min-height: 100vh;
     display: flex;
     justify-content: center;
     flex-direction: column;
+    padding-left:300px;
+    padding-right:300px;
 
-    video {
+
+    .video-slide {
         z-index: 000;
         position: absolute;
         top: 0;
@@ -48,17 +50,25 @@ header {
         object-fit: cover;
     }
 
-    .content {
+    .content.active {
+        display: block;
+    }
+
+    .content{
+        background: transparent;
+        border: 1px solid rgba(255, 255, 255, .2);
+        backdrop-filter: blur(10px);
+        display: none;
         margin-top: auto;
         z-index: 1;
-
+        padding:100px;
+        border-radius: 20px;
         h1 {
             font-size: 4em;
             font-weight: 900;
             text-transform: uppercase;
             letter-spacing: 5px;
             line-height: 75px;
-
             span {
                 font-size: 1.2em;
                 font-weight: 600;
@@ -66,7 +76,8 @@ header {
         }
 
         a {
-            /* display:flexbox; */
+            position: relative;
+            display: flexbox;
             background-color: #fff;
             text-decoration: none;
             color: #000;
@@ -74,13 +85,22 @@ header {
             font-size: 1.1em;
             font-weight: bold;
             border-radius: 2px;
-            margin-top: auto;
+            border: 40px;
+        }
+        a:hover{
+            background-color: transparent;
+            color: #fff;
+            transition: all 0.3s ease;
+            border: 1px solid #fff;
         }
 
         p {
+            font-size: 30px;
             margin-bottom: 65px;
         }
     }
+
+
 }
 
 .slider-nav {
@@ -103,14 +123,32 @@ header {
         transition: 0.3s ease;
     }
 
+    .nav-btn.active {
+        background-color: #2696E9;
+    }
+
     .nav-btn:not(:last-child) {
         margin-right: 20px;
     }
 
     .nav-btn:hover {
-        transform: scale(1.5);
-        background-color: #D5D5D5;
+        transform: scale(1.2);
     }
+
+
+}
+
+.video-slide {
+    position: absolute;
+    width: 100%;
+    clip-path: circle(0% at 0 50%);
+
+}
+
+.video-slide.active {
+    clip-path: circle(150% at 0 50%);
+    transition: all 2s ease;
+    transition-property: clip-path;
 }
 
 /* .hero {
