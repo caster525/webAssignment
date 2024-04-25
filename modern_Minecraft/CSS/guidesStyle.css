@@ -3,7 +3,9 @@
     background: #000;
 
 }
-
+.music{
+    display:none;
+}
 section {
     padding: 100px 200px;
 }
