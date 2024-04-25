@@ -1,0 +1,62 @@
+.main-content{
+    padding: 0rem;
+    background: #2696E9;
+
+}
+section {
+    padding: 100px 200px;
+}
+header{
+    z-index: 100;
+    position: fixed;
+    width: 100%;
+    display: flex;
+}
+.brand{
+    color: #fff;
+    font-size: 1.5em;
+    float: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 15px 100px;
+}
+
+.home {
+    color: #fff;
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.home h1{
+    font-size: 4em;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    line-height: 75px;
+}
+
+.home  span {
+    font-size: 1.2em;
+    font-weight: 600;
+}
+.home p{
+    
+}
+.home  a{
+    position: absolute;
+    display:flexbox;
+    background-color:#fff;
+    text-decoration: none;
+    color: #2696E9;
+    padding: 15px 35px;
+    font-size:1.4em ;
+    font-weight: bold;
+    border-radius: 2px;
+}
+div .avideo-slide{
+    z-index:-1;
+}
