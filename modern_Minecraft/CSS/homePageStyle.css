@@ -1,0 +1,49 @@
+.main-content {
+    /* background-image: url("../images/modern4Pool.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center; */
+    padding: 0rem;
+    background: #000;
+}
+
+header {
+    z-index: 100;
+    position: fixed;
+    width: 100%;
+}
+
+.brand {
+    color: #fff;
+    font-size: 1.5em;
+    float: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 15px 100px;
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(10px);
+}
+
+.aboutus {
+    margin-left: 5%;
+    margin-right: 5%;
+    display: grid;
+    grid: 25% /100%;
+    padding-top: 5%;
+
+    .title {
+        font-size: 2em;
+        font-weight: bold;
+        /* background-color: blue; */
+        /* grid-area: span ; */
+        color:white;
+    }
+
+    .centertext {
+        background-color: red;
+        /* grid-area: ; */
+    }
+
+}

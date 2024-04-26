@@ -6,12 +6,6 @@ btn.onclick = function () {
 };
 
 
-// const menuBtn = document.querySelector(".menu.btn");
-// const nav = document.querySelector(".navigation");
-// menuBtn.addEventListener("click",()=>{
-//     menuBtn.classList.toggle("active");
-//     nav.classList.toggle("actice");
-// });
 
 const btns = document.querySelectorAll(".nav-btn");
 const slides = document.querySelectorAll(".video-slide");
