@@ -119,14 +119,36 @@ header {
         a:hover{
             color: #fff;
             transition: all 0.3s ease;
+
+            
         }
     }
 
     .section3 {
         background-color: skyblue;
+        a{
+            text-decoration: none;
+            color: #000;
+        }
+        a:hover{
+            color: #fff;
+            transition: all 0.3s ease;
+
+            
+        }
     }
 
     .section4 {
         background-color: darkgray;
+        a{
+            text-decoration: none;
+            color: #000;
+        }
+        a:hover{
+            color: #fff;
+            transition: all 0.3s ease;
+
+            
+        }
     }
 }
