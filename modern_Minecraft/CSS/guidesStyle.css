@@ -88,6 +88,7 @@ header {
             font-weight: bold;
             border-radius: 2px;
             border: 40px;
+            border: 1px solid #fff;
         }
         a:hover{
             background-color: transparent;
@@ -153,25 +154,3 @@ header {
     transition-property: clip-path;
 }
 
-/* .hero {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: white;
-    margin-bottom: 100px;
-    padding: 150px 0;
-    position: relative;
-    overflow: hidden;
-    min-height: 100vh;
-    text-align: center;
-}
-
-.video-bg {
-    position: absolute;
-    z-index: -100;
-    top: 0;
-    left: 0;
-    min-height: 100%;
-    min-width: 100%;
-} */

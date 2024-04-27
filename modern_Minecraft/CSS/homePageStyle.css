@@ -1,18 +1,13 @@
 html {
     scroll-behavior: smooth;
-  }
+}
+
 .main-content {
-    /* background-image: url("../images/modern4Pool.webp");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center; */
     padding: 0rem;
-    background: #000;
 }
 
 header {
-    z-index: 100;
+    z-index: 400;
     position: fixed;
     width: 100%;
 }
@@ -29,15 +24,54 @@ header {
     backdrop-filter: blur(10px);
 }
 
+@keyframes colorChange {
+    0% {
+        background-position: 0 50%;
+        background-clip: text;
+    }
 
+    50% {
+        background-position: 100% 50%;
+        background-clip: text;
+    }
+
+    100% {
+        background-position: 0 50%;
+        background-clip: text;
+    }
+
+}
 
 .main {
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 100vh 100vh 100vh 100vh;
-    scroll-behavior: smooth;
-    a {
-        position: flex;
+
+    section {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        padding: 65px;
+    }
+
+    .title {
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 5vmax;
+        z-index: 100;
+        margin: auto;
+    }
+    .content{
+        color: #fff;
+        text-transform: uppercase;
+        z-index: 100;
+    }
+
+    a.btn {
+        top: 10vh;
+        z-index: 200;
+        position: relative;
         display: flexbox;
         background-color: #fff;
         text-decoration: none;
@@ -46,120 +80,53 @@ header {
         font-size: 1.1em;
         font-weight: bold;
         border-radius: 2px;
-        border: 40px;
-        align-self:center;
-        justify-self:center;
+        border: 1px solid #fff;
+        margin-bottom: 10%;
     }
 
-    a:hover {
+    a.btn:hover {
         background-color: transparent;
         color: #fff;
         transition: all 0.3s ease;
         border: 1px solid #fff;
     }
 
-    .Welcome {
+
+    .section1 {
         background-color: black;
-        grid-row: 1/2;
-        padding: 65px;
-        display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: 33% 33% 33%;
-        
+
         .title {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            grid-row: 2/3;
-            color: #fff;
-            text-transform: uppercase;
-            font-size: 108px;
+            background: linear-gradient(to bottom right, blue, pink);
+            background-size: 300% 300%;
+            background-clip: text;
+            color: transparent;
+            animation-name: colorChange;
+            animation-duration: 6s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
         }
 
-        a {
-            
-            display: flex;
-            grid-row: 3/4;
-            
-        }
 
     }
 
-    .aboutus {
-        background-color: aquamarine;
-        grid-row: 2/3;
-        padding: 65px;
-        display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: 33% 33% 33%;
-        .title {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            grid-row: 2/3;
-            color: #fff;
-            text-transform: uppercase;
-            font-size: 108px;
-        }
-        a {
-            
-            display: flex;
-            grid-row: 3/4;
-            
-           
-        }
 
+    .section2 {
+        background-color: aquamarine;
+        a{
+            text-decoration: none;
+            color: #000;
+        }
+        a:hover{
+            color: #fff;
+            transition: all 0.3s ease;
+        }
     }
 
     .section3 {
         background-color: skyblue;
-        grid-row: 3/4;
-        padding: 65px;
-        display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: 33% 33% 33%;
-        
-        .title {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            grid-row: 2/3;
-            color: #fff;
-            text-transform: uppercase;
-            font-size: 108px;
-        }
-
-        a {
-            
-            display: flex;
-            grid-row: 3/4;
-            
-        }
     }
 
     .section4 {
-        background-color: antiquewhite;
-        grid-row: 4/5;
-        padding: 65px;
-        display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: 33% 33% 33%;
-        
-        .title {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            grid-row: 2/3;
-            color: #fff;
-            text-transform: uppercase;
-            font-size: 108px;
-        }
-
-        a {
-            
-            display: flex;
-            grid-row: 3/4;
-            
-        }
+        background-color: darkgray;
     }
 }
