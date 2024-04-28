@@ -39,8 +39,8 @@ header {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    padding-left:300px;
-    padding-right:300px;
+    padding-left:auto;
+    padding-right:auto;
 
 
     .video-slide {
@@ -62,9 +62,9 @@ header {
         border: 1px solid rgba(255, 255, 255, .2);
         backdrop-filter: blur(10px);
         display: none;
-        margin-top: auto;
+        margin: auto;
         z-index: 1;
-        padding:100px;
+        padding:50px;
         border-radius: 20px;
         h1 {
             font-size: 4em;

@@ -11,7 +11,6 @@ const btns = document.querySelectorAll(".nav-btn");
 const slides = document.querySelectorAll(".video-slide");
 const contents = document.querySelectorAll(".content");
 
-
 var sliderNav = function(manual){
     btns.forEach((btn)=>{
         btn.classList.remove("active");
@@ -22,6 +21,7 @@ var sliderNav = function(manual){
     contents.forEach((content)=>{
         content.classList.remove("active");
     });
+
 
     btns[manual].classList.add("active");
     slides[manual].classList.add("active");
