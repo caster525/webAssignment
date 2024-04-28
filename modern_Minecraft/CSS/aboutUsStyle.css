@@ -54,7 +54,7 @@ body{
     position: relative;
 }
 
-.heading h1::after{
+.heading h1::after{ /* adds an underline to h1 */
     content: "";
     position: absolute;
     width: 100%;
@@ -121,7 +121,7 @@ body{
     color: #77B0AA;
 }
 
-.about-content a{
+.about-content a{ /* attributes for "Read More" button  */
     display: inline-block;
     padding: 10px 20px;
     color: #003C43;

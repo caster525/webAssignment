@@ -8,7 +8,7 @@ header {
     width: 100%;
 }
 
-.music{
+.music{ /* hides the audio controller */
     display: none;
 }
 
@@ -52,7 +52,7 @@ header {
     position: relative;
 }
 
-.heading h1::after{
+.heading h1::after{ /* adds an underline to h1 */
     content: "";
     position: absolute;
     width: 100%;
@@ -110,26 +110,16 @@ img:hover {
     grid-row: span 2;
 }
 .grid-wrapper .modal {
-    display: none;
-    /* Hidden by default */
+    display: none; /* hides modal display */
     position: fixed;
-    /* Stay in place */
-    z-index: 1;
-    /* Sit on top */
+    z-index: 1; /* places the modal display in the front */
     padding-top: 100px;
-    /* Location of the box */
     left: 0;
     top: 0;
     width: 100%;
-    /* Full width */
     height: 100%;
-    /* Full height */
     overflow: auto;
-    /* Enable scroll if needed */
-    background-color: rgb(0, 0, 0);
-    /* Fallback color */
-    background-color: rgba(0, 0, 0, 0.9);
-    /* Black w/ opacity */
+    background-color: rgba(0, 0, 0, 0.9); /* transparent black background for modal display */
   }
   
 .modal-content {
@@ -153,11 +143,11 @@ img:hover {
 
 .modal-content,
 #caption {
-    animation-name: zoom;
+    animation-name: zoom; /* use custom zoom animation */
     animation-duration: 0.6s;
 }
 
-@keyframes zoom {
+@keyframes zoom { /* scales from 0 to 1 to create illusion of zooming in  */
     from {
         transform: scale(0)
     }
@@ -166,7 +156,7 @@ img:hover {
     }
 }
 
-.close {
+.close { /* close icon attributes */
     position: absolute;
     top: 15px;
     right: 35px;
