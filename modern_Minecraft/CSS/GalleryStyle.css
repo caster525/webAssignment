@@ -8,6 +8,10 @@ header {
     width: 100%;
 }
 
+.music{
+    display: none;
+}
+
 .main-content {
     user-select: none;
     padding: 0rem;
