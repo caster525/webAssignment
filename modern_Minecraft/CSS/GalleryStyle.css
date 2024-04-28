@@ -26,12 +26,17 @@ header {
     backdrop-filter: blur(10px);
 }
 
+.title{
+    text-align: center;
+}
+
 h1 {
     padding-top: 65px;
 }
 
 h1, h3{
     color: white;
+    align: center;
 }
 
 img {
