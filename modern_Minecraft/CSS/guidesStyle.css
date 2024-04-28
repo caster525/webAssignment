@@ -1,4 +1,5 @@
 .main-content {
+    user-select: none;
     padding: 0rem;
     background: #000;
 

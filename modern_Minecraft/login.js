@@ -82,7 +82,15 @@ registerbtn.onclick = function () {
     alert("Register");
     let regusername = document.querySelector(".reg-username").value;
     let regPass = document.querySelector(".register-pass").value;
-    localStorage.setItem(regusername,regPass);
+    localStorage.setItem(regusername, regPass);
     sidebar1.classList.toggle('active');
     sidebar2.classList.toggle('active');
+}
+
+
+const forgot = document.querySelector('forgot');
+
+forgot.onclick = function () {
+    alert("How are buy some fish oil");
+    window.location.href = "https://www.mannings.com.hk/health/cardiovascular-health/fish-oil/c/feomega-3?lang=zh_TW";
 }

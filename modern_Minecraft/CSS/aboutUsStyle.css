@@ -44,7 +44,7 @@ body{
     align-items: center;
     flex-direction: column;
     text-align: center;
-    margin: 20px auto;
+    padding-top: 65px;
 }
 
 .heading h1{

@@ -3,6 +3,7 @@ html {
 }
 
 .main-content {
+    user-select: none;
     padding: 0rem;
 }
 
