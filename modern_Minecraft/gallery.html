@@ -5,36 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gallery</title>
+    <link rel="icon" href="images/mcLogo.png">
     <link rel="stylesheet" href="/modern_Minecraft/CSS/MainStyle.css">
-    <link rel="stylesheet" href="/modern_Minecraft/CSS/GalleryStyle.css">
+    <link rel="stylesheet" href="/modern_Minecraft/CSS/galleryStyle.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <script>
-        // create references to the modal...
-        var modal = document.getElementById('myModal');
-        // to all images -- note I'm using a class!
-        var images = document.getElementsByClassName('myImages');
-        // the image in the modal
-        var modalImg = document.getElementById("img01");
-        // and the caption in the modal
-        var captionText = document.getElementById("caption");
-
-        // Go through all of the images with our custom class
-        for (var i = 0; i < images.length; i++) {
-            var img = images[i];
-            // and attach our click listener for this image.
-            img.onclick = function(evt) {
-                modal.style.display = "block";
-                modalImg.src = this.src;
-                captionText.innerHTML = this.alt;
-            }
-        }
-
-        var span = document.getElementsByClassName("close")[0];
-
-        span.onclick = function() {
-            modal.style.display = "none";   
-        }
-    </script>
 </head>
 
 <body>
@@ -48,25 +22,25 @@
         </div>
         <ul>
             <li>
-                <a href="#">
+                <a href="homePage.html">
                     <i class="bx bxs-grid-alt"></i>
                     <span class="nav-item">Dashboard</span>
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a href="aboutUs.html">
                     <i class='bx bxs-briefcase'></i>
                     <span class="nav-item">About Us</span>
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a href="gallery.html">
                     <i class='bx bxs-photo-album'></i>
                     <span class="nav-item">Gallery</span>
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a href="guides.html">
                     <i class='bx bxs-book-alt'></i>
                     <span class="nav-item">Guides</span>
                 </a>
@@ -81,6 +55,11 @@
     </div>
 
     <div class="main-content">
+        <header>
+            <h1 class="brand">
+                Modern Minecraft Gallery
+            </h1>
+        </header>
         <h1 align="center">
             Gallery
         </h1>
@@ -114,13 +93,7 @@
               </div>
         </div>
     </div>
-    <script>
-        let btn = document.querySelector('#btn');
-        let sidebar = document.querySelector('.sidebar');
-    
-        btn.onclick = function () {
-            sidebar.classList.toggle('active');
-        };
-    </script>
-    
 </body>
+<script src="homePagescript.js"></script>
+<script src="galleryJS.js"></script>
+</html>
