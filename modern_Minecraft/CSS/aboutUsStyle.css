@@ -65,7 +65,7 @@ body{
 }
 
 .heading p{
-    font-size: 18px;
+    font-size: 24px;
     color: #77B0AA;
     margin-bottom: 35px;
 }
@@ -110,13 +110,13 @@ body{
 }
 
 .about-content h2{
-    font-size: 23px;
-    margin-bottom: 15px;
+    font-size: 48px;
+    margin-bottom: 50px;
     color: #E3FEF7;
 }
 
 .about-content p{
-    font-size: 18px;
+    font-size: 24px;
     line-height: 1.5;
     color: #77B0AA;
 }
