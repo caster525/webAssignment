@@ -1,4 +1,12 @@
 
+
+
+//check the password match the petterm
+//(?=.\d) ensures that at least one digit is present.
+//(?=.[a-z]) ensures that at least one lowercase letter is present.
+//(?=.*[A-Z]) ensures that at least one uppercase letter is present.
+//.{8,} ensures that the password is at least 8 characters long.
+//if not match disable the login button
 document.querySelector(".inputPass").addEventListener('input', validate);
 document.querySelector(".login-btn").disabled = true;
 var RGEX = /((?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,})/;
@@ -13,9 +21,11 @@ function validate() {
         document.querySelector(".inputPass").style.border = null;
     }
 }
+
+
+
+//login function check the user and password matching 
 document.querySelector(".login-btn").addEventListener('click', login);
-
-
 function login() {
     var user = document.getElementById("inputUser").value;
     var pass = document.getElementById("inputPass").value;
@@ -30,7 +40,7 @@ function login() {
 }
 
 
-
+//swap between the login page and register page
 let btn1 = document.querySelector("#close-btn");
 let btn2 = document.querySelector("#loginSwap-btn");
 let sidebar1 = document.querySelector(".wrapper-login");
@@ -48,7 +58,7 @@ btn2.onclick = function () {
 
 
 
-
+//keyup and Verify if the registered password matches the requested password.
 let timer, timeoutVal = 500; // time it takes to wait for user to stop typing in ms
 const kick = document.getElementById('check');
 const typer = document.querySelector(".register-passRepeat");
@@ -78,6 +88,9 @@ function handleKeyUp(e) {
     }, timeoutVal);
 }
 
+
+
+//save the password to the local storage
 registerbtn.onclick = function () {
     alert("Register");
     let regusername = document.querySelector(".reg-username").value;
@@ -88,9 +101,10 @@ registerbtn.onclick = function () {
 }
 
 
-const forgot = document.querySelector('forgot');
 
+
+//alert the massage to user
+const forgot = document.querySelector('.forgot');
 forgot.onclick = function () {
-    alert("How are buy some fish oil");
-    window.location.href = "https://www.mannings.com.hk/health/cardiovascular-health/fish-oil/c/feomega-3?lang=zh_TW";
+    alert("How about buy some fish oil?");
 }
