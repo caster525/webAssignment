@@ -63,7 +63,8 @@ header {
         z-index: 100;
         margin: auto;
     }
-    .content{
+
+    .content {
         color: #fff;
         text-transform: uppercase;
         z-index: 100;
@@ -111,100 +112,72 @@ header {
     }
 
 
+
+
     .section2 {
-        background-color: aquamarine;
-        a{
+        background-color: rgb(215, 194, 194);
+
+        a {
             text-decoration: none;
-            color: #000;
+            color: rgb(0, 0, 0);
+
         }
-        a:hover{
-            color: #fff;
+
+        a:hover {
+            color: #ffffff;
             transition: all 0.3s ease;
 
         }
     }
 
-    /* .section3 {
-        background-color: black;
-        a{
+    .section3 {
+        background-color: rgb(0, 0, 0);
+
+        a {
             text-decoration: none;
+            
+            
+        }
+
+        .content{
             color: rebeccapurple;
             text-shadow: 0 0 10px rebeccapurple;
         }
-        a:hover{
-            color: #fff;
-            transition: all 0.3s ease;
+        .content:hover{
+            color: white;
             text-shadow: 0 0 150px rebeccapurple;
         }
-        
-    } */
 
-    .section3{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        min-height: 100vh;
-        background: #000;
-        .wrapper {
-            display: flex;
-        }
-        .wrapper .sec-texts {
-            height: 90px;
-            line-height: 90px;
-            overflow: hidden;
-        }
-        .sec-texts li {
-            position: relative;
-            top: 0;
-            font-size: 60px;
-            color: #0ef;
-            list-style: none;
-            padding: 0 20px;
-            text-shadow: 0 0 10px #0ef;
-            animation: slide 12s steps(4) infinite, colorful 6s infinite;
-        }
-        
-        .sec-texts li span {
-            position: relative;
-        }
-        .sec-texts li span::before {
-            content: '';
-            position: absolute;
-            left: 0;
-            width: 400px;
-            height: 90px;
-            background: #000;
-            border-left: 2px solid #0ef;
-            animation: typing 1.5s steps(10) infinite alternate;
-        }
-        
     }
-    
 
     .section4 {
-        background-color: darkgray;
-        a{
+        background-color: rgb(255, 183, 183);
+
+        a {
             text-decoration: none;
-            color: #000;
+            color: #000000;
         }
-        a:hover{
-            color: #fff;
+
+        a:hover {
+            color: #ffffff;
             transition: all 0.3s ease;
 
-            
         }
     }
 }
+
 @keyframes slide {
     100% {
         top: -360px;
     }
 }
+
 @keyframes colorful {
     100% {
         filter: hue-rotate(360deg);
     }
 }
+
 @keyframes typing {
     100% {
         left: 100%;
