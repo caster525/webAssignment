@@ -115,7 +115,12 @@ header {
 
 
     .section2 {
-        background-color: rgb(215, 194, 194);
+        /* background-color: rgb(215, 194, 194); */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background: #000;
 
         a {
             text-decoration: none;
@@ -128,6 +133,51 @@ header {
             transition: all 0.3s ease;
 
         }
+
+        .wrapper {
+            display: flex;
+            margin: auto;
+        }
+
+        .wrapper .first-text {
+            font-size: 120px;
+            color: #fff;
+        }
+
+        .wrapper .sec-texts {
+            height: 180px;
+            line-height: 180px;
+            overflow: hidden;
+        }
+
+        .sec-texts li {
+            position: relative;
+            top: 0;
+            font-size: 120px;
+            color: #0ef;
+            list-style: none;
+            padding: 0 40px;
+            text-shadow: 0 0 px #0ef;
+            animation: slide 24s steps(4) infinite, colorful 6s infinite;
+        }
+
+        .sec-texts li span {
+            position: relative;
+        }
+
+        .sec-texts li span::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            width: 800px;
+            height: 180px;
+            background: #000;
+            border-left: 2px solid #0ef;
+            animation: typing 3s steps(10) infinite alternate;
+        }
+        .sec-texts:hover{
+            text-shadow: 0 0 10px #0ef;
+        }
     }
 
     .section3 {
@@ -135,15 +185,16 @@ header {
 
         a {
             text-decoration: none;
-            
-            
+
+
         }
 
-        .content{
+        .content {
             color: rebeccapurple;
             text-shadow: 0 0 10px rebeccapurple;
         }
-        .content:hover{
+
+        .content:hover {
             color: white;
             text-shadow: 0 0 150px rebeccapurple;
         }
@@ -168,7 +219,7 @@ header {
 
 @keyframes slide {
     100% {
-        top: -360px;
+        top: -720px;
     }
 }
 
@@ -181,6 +232,6 @@ header {
 @keyframes typing {
     100% {
         left: 100%;
-        margin: 0 -35px 0 35px;
+        margin: 0 -70px 0 70px;
     }
 }
